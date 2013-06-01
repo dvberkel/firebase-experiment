@@ -14,7 +14,7 @@
     button.addEventListener('click', function register(){
 	var name = input.value;
 	if (name) {
-	    db.set(registerEventFor(name));
+	    db.push(registerEventFor(name));
 	}
     });
 })();
