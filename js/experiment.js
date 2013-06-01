@@ -17,4 +17,12 @@
 	    db.push(registerEventFor(name));
 	}
     });
+
+    var registrations = document.getElementById('registrations');
+    db.on('child_added', function(snapshot){
+	var value = snapshot.val();
+	var li = document.createElement('li');
+	li.textContent = 'registered ' + value.user;
+	registrations.insertBefore(li, registrations.childNodes[0]);
+    });
 })();
