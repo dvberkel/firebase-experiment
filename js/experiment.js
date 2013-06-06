@@ -1,5 +1,5 @@
 (function(){
-    var db = new Firebase('https://effrafax.firebaseio.com/');
+    var db = new Firebase('https://effrafax.firebaseio.com/register-events');
 
     var registerEventFor = function registerEventFor(name) {
 	var timestamp = (new Date()).getTime();
